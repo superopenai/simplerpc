@@ -16,6 +16,26 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <!-- junit version -->
+        <junit.version>4.12</junit.version>
+        <!-- slf4j-api日志接口版本 -->
+        <slf4j-api.version>1.7.21</slf4j-api.version>
+        <!-- logback日志版本 -->
+        <logback.version>1.1.1</logback.version>
+        <!-- springframework version -->
+        <springframework.version>4.3.12.RELEASE</springframework.version>
+        <!-- netty version -->
+        <netty.version>4.1.16.Final</netty.version>
+        <!-- fastjson version -->
+        <fastjson.version>1.2.62</fastjson.version>
+        <!-- commons-collections4 version -->
+        <commons-collections4.version>4.0</commons-collections4.version>
+        <!-- objenesis version -->
+        <objenesis.version>2.1</objenesis.version>
+        <!-- cglib version -->
+        <cglib.version>3.2.4</cglib.version>
+        <!-- nacos       -->
+        <nacos-discovery-spring-boot.version>0.2.3</nacos-discovery-spring-boot.version>
     </properties>
 
     <dependencies>
@@ -35,6 +55,92 @@
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
+
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- logback日志依赖 -->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j-api.version}</version>
+        </dependency>
+
+        <!-- Springframework -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${springframework.version}</version>
+        </dependency>
+
+        <!-- netty-->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>${netty.version}</version>
+        </dependency>
+
+        <!--fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>${fastjson.version}</version>
+        </dependency>
+
+
+        <!-- Apache Commons Collections -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-collections4</artifactId>
+            <version>${commons-collections4.version}</version>
+        </dependency>
+
+        <!-- Objenesis -->
+        <dependency>
+            <groupId>org.objenesis</groupId>
+            <artifactId>objenesis</artifactId>
+            <version>${objenesis.version}</version>
+        </dependency>
+
+        <!-- CGLib -->
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>${cglib.version}</version>
+        </dependency>
+
+        <!--  Nacos   -->
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>nacos-discovery-spring-boot-starter</artifactId>
+            <version>${nacos-discovery-spring-boot.version}</version>
+        </dependency>
+
+
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
